@@ -1,13 +1,12 @@
 import React from 'react';
 import Cita from './Cita.js';
-
 import Subtitulo from './Subtitulo';
 
-function ListaCitas(props,citas, eliminarCita) {
+function ListaCitas({ citas, eliminarCita }) {
   return (
-    <div class="one-half column">
+    <div className="one-half column">
       <Subtitulo texto="Administra tus citas" />
-      {props.citas.map(cita => (
+      {citas.map(cita => (
         <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />
       ))}
     </div>
@@ -15,5 +14,3 @@ function ListaCitas(props,citas, eliminarCita) {
 }
 
 export default ListaCitas;
-
-

@@ -21,7 +21,7 @@ const actualizarCampo = (evento) => {
 };
 
 const enviarFormulario = (evento) => {
-  evento.preventDefault();  // Prevenir que el formulario se envíe de la manera predeterminada y recargue la página.
+  evento.preventDefault(); 
 
   if (
     !nuevaCita.mascota.trim() ||

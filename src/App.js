@@ -24,7 +24,7 @@ function App() {
   const eliminarCita = (id) => {
     const confirmacion = window.confirm('¿Está seguro de que desea eliminar esta cita?');
     if (confirmacion) {
-      const nuevasCitas = citas.filter(cita => cita.id !== id);
+      const nuevasCitas = citas.filter(cita => cita.id !== id );
       setCitas(nuevasCitas);
     }
   };
